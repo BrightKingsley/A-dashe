@@ -1,0 +1,10 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-1);
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 4rem auto;
+  overflow-y: hidden;
+}

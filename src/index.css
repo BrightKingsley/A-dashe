@@ -1,0 +1,35 @@
+:root {
+  --light-1: #ebfdfa;
+  --light-2: #e1fdf8;
+  --light-3: #e6f8eb;
+  --mid-1: #6bf4dd;
+  --mid-2: #30efd0;
+  --mid-3: #10cfb0;
+  --dark-1: #0b947e;
+  --dark-2: #07594b;
+  --dark-3: #021e19;
+  /* --light-1: #ebfdfa 
+  --light-1: #ebfdfa */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+body {
+  background-color: var(--light-1);
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,37 @@
+.chartBar {
+  width: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartBarInner {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #313131;
+  border: 1px solid #90ceba58;
+  border-radius: 12px;
+  /* background-color: #90ceba; */
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chartBarFill {
+  /* background-color: #064f43; */
+  background-color: var(--dark-1);
+  background-image: linear-gradient(to bottom, var(--mid-3), var(--dark-2));
+  border-radius: 1.25rem;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+
+.chartBarLabel {
+  color: gray;
+  /* font-weight: bold; */
+  font-size: 0.5rem;
+  text-align: center;
+}

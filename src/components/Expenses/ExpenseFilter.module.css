@@ -1,0 +1,57 @@
+.expensesFilter {
+  color: white;
+  padding: 0 1rem;
+  grid-column: 1/-1;
+  grid-row: 5/6;
+  height: 5rem;
+  background-color: var(--dark-1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 540px) {
+  .expensesFilter {
+    color: white;
+    padding: 0 1rem;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: 5rem;
+    background-color: var(--dark-1);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.expensesFilterControl {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+}
+
+.expensesFilter label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.expensesFilter select {
+  font: inherit;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.select {
+  border: none;
+}
+
+.select:active {
+  border: none;
+}

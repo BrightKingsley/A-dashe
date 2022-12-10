@@ -1,0 +1,40 @@
+.expenseSummary {
+  position: relative;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 3rem;
+  /* grid-column: 12/-1; */
+  /* width: 20rem; */
+  height: 13rem;
+  /* background-color: var(--mid-2); */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  border-radius: 1rem;
+}
+
+.summary2{
+  position:relative;
+  left:50%;
+  top:30%;
+  width:50%;
+}
+
+@media (min-width: 540px) {
+  .expenseSummary {
+    position: relative;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    padding: 3rem;
+    /* grid-column: 12/-1; */
+    /* width: 20rem; */
+    height: 20rem;
+    /* background-color: var(--mid-2); */
+    grid-column: 7/-1;
+      grid-row: 1/2;
+
+    border-radius: 1rem;
+  }
+}

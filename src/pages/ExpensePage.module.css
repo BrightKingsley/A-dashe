@@ -1,0 +1,20 @@
+.expenses {
+  display: grid;
+  overflow-y: scroll;
+  grid-template-rows: repeat(12, minmax(auto, 1fr));
+  grid-template-columns: repeat(12, minmax(1rem, 1fr));
+  grid-gap: 2rem;
+  grid-column: 1 / -1;
+  grid-row: 2/-1;
+  grid-gap: 0.3rem;
+}
+
+@media (min-width: 540px) {
+  .expenses {
+    overflow-y: scroll;
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    grid-column: 5 / -1;
+    grid-row: 2/-1;
+  }
+}

@@ -1,0 +1,70 @@
+.App {
+  display: grid;
+}
+
+/* @media (min-width: 640px) { */
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-1);
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 4rem auto;
+  /* overflow-y: hidden; */
+}
+/* } */
+
+.menu-slide-in-enter {
+  animation: showMenu 0.3s ease-out forwards;
+}
+.menu-slide-in-enter-active {
+  animation: showingMenu 0.3s ease-out forwards;
+}
+.menu-slide-in-exit {
+  animation: hideMenu 0.4s ease-out forwards;
+}
+.menu-slide-in-exit-active {
+  animation: hidingMenu 0.4s ease-out forwards;
+}
+
+@keyframes showMenu {
+  0% {
+    transform: translateX(-100%);
+    /* opacity: 0; */
+  }
+  100% {
+    transform: translateX(0%);
+    /* opacity: 1; */
+  }
+}
+@keyframes showingMenu {
+  0% {
+    transform: translateX(-100%);
+    /* opacity: 0; */
+  }
+  100% {
+    transform: translateX(5%);
+    /* opacity: 1; */
+  }
+}
+@keyframes hideMenu {
+  0% {
+    transform: translateX(0%);
+    /* opacity: 1; */
+  }
+  100% {
+    transform: translateX(-100%);
+    /* opacity: 0; */
+  }
+}
+@keyframes hidingMenu {
+  0% {
+    transform: translateX(5%);
+    /* opacity: 1; */
+  }
+  100% {
+    transform: translateX(-100%);
+    /* opacity: 0; */
+  }
+}
